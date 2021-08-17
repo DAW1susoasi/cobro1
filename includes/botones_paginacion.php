@@ -1,0 +1,4 @@
+<span><?php if($total_paginas > 2 && $pagina > 2) { ?> <a href="?pagina=1"><input type='button' value='1'></a><?php } else { ?> &nbsp;&nbsp;&nbsp; <?php } ?></span>
+<span><?php if($pagina > 1) { ?><a href="?pagina=<?php echo($anterior); ?>"><input type='button' value='<?php echo($anterior); ?>'></a><?php } else { ?> &nbsp;&nbsp;&nbsp; <?php } ?></span>
+<span><?php if($pagina < $total_paginas) { ?><a href="?pagina=<?php echo($siguiente); ?>"><input type='button' value='<?php echo($siguiente); ?>'></a><?php } else { ?> &nbsp;&nbsp;&nbsp;<?php } ?></span>
+<span><?php if($total_paginas > 1 && $pagina + 1 < $total_paginas) { ?><a href="?pagina=<?php echo($total_paginas); ?>"><input type='button' value='<?php echo($total_paginas); ?>'></a><?php } else { ?> &nbsp;&nbsp;&nbsp; <?php } ?></span>

@@ -1,0 +1,180 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	background-color:#FFFFFF;
+}
+
+h1 {
+    font-family: 'Passion One';
+    font-size: 2rem;
+    text-transform: uppercase;
+	text-align: center;
+}
+
+label {
+    width: 175px;
+    display: inline-block;
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: 'Lato';
+}
+
+form.formulario {
+    margin: 50px auto;
+    padding: 20px;
+    border: 5px solid #ccc;
+    width: 500px;
+    background: #eee;
+}
+
+input {
+    text-align: center;
+}
+
+input.formulario {
+    border: 2px solid #ccc;
+    font-size: 1.5rem;
+    font-family: 'Lato';
+    padding: 3px;
+}
+
+div.formulario {
+    margin: 20px 0;
+}
+ 
+input.enviar {
+    padding: 10px;
+    font-size: 1.5rem;
+    font-family: 'Lato';
+    background: yellowgreen;
+    color: white;
+    text-align: center;
+}
+
+div.enviar{
+	text-align: center;
+}
+
+.table-container {
+	overflow-x: auto; /* tabla responsive con scroll automático*/
+}
+
+table {
+	border-collapse: collapse;
+	font-size: .9rem;
+	margin: 30px auto;
+}
+
+tr {
+	text-align: center;
+}
+
+table tr:hover {
+	background: rgb(255, 235, 185);
+}
+
+tr:nth-child(odd) {
+	background: rgb(225, 225, 225);
+}
+
+th {
+	font-size: 17px;
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+	background: #5b78a7;
+}
+
+td {
+	border: 1px solid rgb(160, 160, 160);
+    padding: 3px 0;
+}
+
+span {
+	padding: 6px;
+}
+
+span a {
+	text-decoration: none;
+}
+
+.oculto{
+    display: none;
+}
+
+.bot{
+	display: inline;
+	border: 0;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 10px;
+}
+
+/* menu */
+.header{
+	margin: auto;
+	padding-top: 30px;
+}
+
+.header a {
+  margin-left: 5px;
+  text-align: center;
+}
+
+.flex-container{
+	display: flex;
+	justify-content: center;
+}
+
+.flex-container ul {
+ list-style: none;
+ justify-content: center;
+ display: flex;
+}
+
+/* items del menu */
+.flex-container ul li {
+ background-color: #2e518b;
+ position: relative;
+ margin: 0;
+ padding: 0;
+}
+
+/* efecto al pasar el ratón por los items del menu */
+.flex-container ul li:hover {
+ background: #5b78a7;
+}
+
+/* enlaces del menu */
+.flex-container ul a {
+ display: block;
+ color: #fff;
+ text-decoration: none;
+ font-weight: 400;
+ font-size: 17px;
+ padding: 12px;
+ font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+ letter-spacing: 1px;
+}
+
+/* menu desplegable */
+.flex-container ul ul {
+ display: none;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ padding: 0;
+}
+
+/* items del menu desplegable al pasar el ratón */
+.flex-container ul li:hover > ul {
+ display: block;
+}
